@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall of Fame - Sitare Coding Club</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/code-logo.png') }}" alt="Coding Club Logo" class="coding-logo">
+        </div>
+        <div class="title-container">
+            <h1 id="sitare-coding-club" class="club-name">&lt;Sitare Coding Club/&gt;</h1>
+            <h2 id="sitare-university" class="university-name">Sitare University</h2>
+        </div>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/sitare-logo.jpeg') }}" alt="Sitare Logo" class="sitare-logo">
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('wall_of_fame') }}" class="active">Wall of Fame</a>
+        <a href="{{ url_for('index') }}#about">About Us</a>
+        <a href="{{ url_for('index') }}#contact">Contact</a>
+    </nav>
+
+    <main class="content" role="main">
+        <section class="wall-of-fame">
+            <h2>Wall of Fame</h2>
+            
+            <div class="achievement-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+                <button class="filter-btn" data-filter="competition">Competitions</button>
+                <button class="filter-btn" data-filter="project">Projects</button>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card hackathon">
+                    <div class="achievement-image">
+                        <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Winner">
+                        <div class="rank-badge">1st</div>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Tech Innovation Hackathon</h3>
+                        <p>Team ByteBuilders</p>
+                        <p>₹50,000 Cash Prize</p>
+                        <div class="achievement-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-card hackathon">
+                    <div class="achievement-image">
+                        <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Winner">
+                        <div class="rank-badge">1st</div>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Tech Innovation Hackathon</h3>
+                        <p>Team ByteBuilders</p>
+                        <p>₹50,000 Cash Prize</p>
+                        <div class="achievement-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card hackathon">
+                    <div class="achievement-image">
+                        <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Winner">
+                        <div class="rank-badge">1st</div>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Tech Innovation Hackathon</h3>
+                        <p>Team ByteBuilders</p>
+                        <p>₹50,000 Cash Prize</p>
+                        <div class="achievement-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Add more achievement cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Sitare Coding Club. <span class="love-message">Made with <i class="fas fa-heart"></i> by developers, for developers</span></p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
