@@ -980,3 +980,24 @@ body {
     }
 }
 
+
+    /* Events Section */
+    .events-section {
+        padding: 40px;
+        background-color: #1A1A1A;
+        color: #EEE;
+        text-align: center;
+    }
+    
+    .event {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #00FFD1;
+        border-radius: 5px;
+        background-color: #2A2A2A;
+        box-shadow: 0 0 10px rgba(0, 255, 209, 0.5);
+    }
+    
+    .event h3 {
+        color: #00FFD1;
+    }
