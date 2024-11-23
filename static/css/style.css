@@ -65,9 +65,10 @@ body {
 }
 
 .coding-logo {
-    width: 80px;
+    width: 120px;
     height: auto;
     transition: transform 0.3s;
+    border-radius: 50%;
 }
 
 .coding-logo:hover {
@@ -75,8 +76,8 @@ body {
 }
 
 .sitare-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary-color);
@@ -176,6 +177,9 @@ body {
     background-color: var(--primary-color);
     margin-left: 5px;
     animation: blink 1s infinite;
+
+
+}
 }
 @keyframes blink {
     0%, 100% { opacity: 1; }
@@ -357,6 +361,7 @@ body {
     text-align: center;
     border: 1px solid var(--primary-color);
     transition: transform 0.3s;
+    justify-content: center;
 }
 
 .coordinator-card:hover {
@@ -461,6 +466,7 @@ body {
     background: var(--card-bg);
     padding: 2rem;
     text-align: center;
+    align-items: center;
     border-top: 2px solid var(--primary-color);
 }
 
@@ -531,7 +537,7 @@ body {
 }
 
 .about-content {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
     padding: 2rem;
@@ -972,3 +978,7 @@ body {
         height: 60px;
     }
 }
+
+
+
+
