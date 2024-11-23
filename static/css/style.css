@@ -65,9 +65,10 @@ body {
 }
 
 .coding-logo {
-    width: 80px;
+    width: 110px;
     height: auto;
     transition: transform 0.3s;
+    border-radius: 50%;
 }
 
 .coding-logo:hover {
@@ -442,6 +443,8 @@ body {
     border-radius: 8px;
     margin-bottom: 2rem;
     border: 1px solid var(--primary-color);
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .info-item {
@@ -466,6 +469,10 @@ body {
 
 .social-links {
     margin-bottom: 1rem;
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
 }
 
 .social-links a {
@@ -972,3 +979,4 @@ body {
         height: 60px;
     }
 }
+

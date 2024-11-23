@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Form Section */
+.form-section {
+    padding: 40px;
+    background-color: #1A1A1A;
+    color: #EEE;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #2A2A2A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 209, 0.5);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #00FFD1;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #00FFD1;
+    border-radius: 5px;
+    background-color: #333;
+    color: #EEE;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00FFD1;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00CCB3;
+}
+
+/* Events Section */
+.events-section {
+    padding: 40px;
+    background-color: #1A1A1A;
+    color: #EEE;
+    text-align: center;
+}
+
+.event {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #00FFD1;
+    border-radius: 5px;
+    background-color: #2A2A2A;
+    box-shadow: 0 0 10px rgba(0, 255, 209, 0.5);
+}
+
+.event h3 {
+    color: #00FFD1;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Join the Club Form -->
+<section id="join-us" class="form-section">
+    <div class="form-container">
+        <h2>Join the Coding Club</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+            <label for="year">Year:</label>
+            <select id="year" name="year" required>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="reason">Why do you want to join this club?</label>
+            <textarea id="reason" name="reason" placeholder="Share your reason" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
