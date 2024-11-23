@@ -41,7 +41,7 @@
                 <span id="typed-text"></span><span class="cursor">|</span>
             </div>
             <div class="cta-buttons">
-                <a href="#join-us" class="cta-button">Join the Club</a>
+                <a href="https://forms.gle/CJMCGS4eaqXDhXTZ9" target="_blank" class="cta-button">Join the Club</a>
                 <a href="#events" class="cta-button secondary">View Events</a>
             </div>
         </section>
@@ -76,40 +76,58 @@
             </div>
         </section>
 
+        <section id="events" class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Hackathon 2024</h3>
+                <p>Date: December 15, 2024</p>
+                <p>Location: Auditorium, Block A</p>
+            </div>
+            <div class="event">
+                <h3>Workshop on AI/ML</h3>
+                <p>Date: January 10, 2025</p>
+                <p>Location: Lab 2, Block B</p>
+            </div>
+            <div class="event">
+                <h3>Code Challenge</h3>
+                <p>Date: February 5, 2025</p>
+                <p>Location: Online</p>
+            </div>
+        </section>
         <section class="section coordinators">
             <h2>Our leads</h2>
             <div class="leadership-team">
                 <div class="coordinator-card faculty">
-                    <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Faculty Advisor">
-                    <h3>Dr. Rajesh Kumar</h3>
+                    <img src="{{ url_for('static', filename='images/kusha_sir.jpg') }}" alt="Faculty Advisor">
+                    <h3>Dr. Kushal Shah</h3>
                     <p class="role">Faculty Advisor</p>
-                    <p class="expertise">PhD in Computer Science</p>
+                    <p class="expertise">PhD in Plasma Physics</p>
                     <div class="social-links">
-                        <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/us" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kushal-shah-95b9a3b" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 
                 <div class="main-coordinators">
                     <div class="coordinator-card">
-                        <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Main Coordinator">
-                        <h3>Priya Sharma</h3>
+                        <img src="{{ url_for('static', filename='images/narayan.jpeg') }}" alt="Main Coordinator">
+                        <h3>Narayan Jat</h3>
                         <p class="role">Club Coordinator</p>
-                        <p class="expertise">Full Stack Development, AI/ML</p>
+                        <p class="expertise">Junior At Sitare University</p>
                         <div class="social-links">
-                            <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/narayan-jat" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/narayan-jat-23935a255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDxVjcArSR3%2BR7Oo03wErow%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
 
                     <div class="coordinator-card">
-                        <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Sub Coordinator">
-                        <h3>Rahul Verma</h3>
+                        <img src="{{ url_for('static', filename='images/bharat.jpg') }}" alt="Sub Coordinator">
+                        <h3>Bharat Suthar</h3>
                         <p class="role">Sub Coordinator</p>
-                        <p class="expertise">Cloud Computing, DevOps</p>
+                        <p class="expertise">Junior At Sitare University</p>
                         <div class="social-links">
-                            <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/bharat-suthar-su" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -118,14 +136,28 @@
             
         </section>
 <!-- Team Members Section -->
+<h2 style="text-align: center; margin:0px 0px 48px; font-size: 40px; color: #76c7c0; ">Our Team</h2>
 <section class="team-members" id="team">
-    <h2>Our Team</h2>
     <div class="team-grid">
         <!-- Team Member 1 -->
         <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/animesh.jpg') }}" alt="Team Member">
+            <h4>Animesh Awashthi</h4>
+            <p>Junior</p>
+            <div class="social-links">
+                <a href="https://github.com/Aksherwal" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/animesh-awasthi-000me" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
+            <h4>Nikhil Yadav</h4>
+            <p>Sophomire </p>
             <div class="social-links">
                 <a href="https://github.com/username" target="_blank">
                     <i class="fab fa-github"></i>
@@ -136,105 +168,80 @@
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
+            <img src="{{ url_for('static', filename='images/Akash.jpg') }}" alt="Team Member">
+            <h4>Akash Kumar</h4>
+            <p>Sophomire</p>
             <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
+                <a href="https://github.com/Aksherwal" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
+                <a href="https://www.linkedin.com/in/aakash-kumar-aa0b591b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
+            <img src="{{ url_for('static', filename='images/anshul.jpg') }}" alt="Team Member">
+            <h4>Anshul Kumar</h4>
+            <p>Sophomire</p>
             <div class="social-links">
                 <a href="https://github.com/username" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
+                <a href="https://www.linkedin.com/in/anshul-sharma-03a97a285" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    
+        <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/deepali.jpg') }}" alt="Team Member">
+            <h4>Deepali Tomar</h4>
+            <p>Sophomire</p>
+            <div class="social-links">
+                <a href="https://github.com/deepalitomar021" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/deepali-tomar-4b876b289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
+            <img src="{{ url_for('static', filename='images/Jitendra.jpg') }}" alt="Team Member">
+            <h4>Jitendra Yadav</h4>
+            <p>Sophomire</p>
             <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
+                <a href="http://GitHub.com/Jittu77" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
+                <a href="https://www.linkedin.com/in/jitendra-kumar-155238281" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
+            <img src="{{ url_for('static', filename='images/saurabh.jpg') }}" alt="Team Member">
+            <h4>Suarabh Agrahari</h4>
+            <p>Sophomire</p>
             <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
+                <a href="hhttps://github.com/mrstarks298" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
+                <a href="htpps://linkedin.com/in/saurabh-agrahari1234" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
+            <img src="{{ url_for('static', filename='images/Yashwardhan.jpg') }}" alt="Team Member">
+            <h4>Yashwardhan Singh Chundawat</h4>
+            <p>Sophomire</p>
             <div class="social-links">
                 <a href="https://github.com/username" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
-            <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
-            <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
-            <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
+                <a href="https://www.linkedin.com/in/yashwardhan-singh-chundawat-a87572247" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
@@ -258,7 +265,7 @@
     
 <section id="contact" class="section contact">
     <h2>Get in Touch</h2>
-        div class="contact-container">
+        <div class="contact-container">
             <div class="contact-info">
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>

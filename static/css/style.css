@@ -65,9 +65,10 @@ body {
 }
 
 .coding-logo {
-    width: 80px;
+    width: 110px;
     height: auto;
     transition: transform 0.3s;
+    border-radius: 50%;
 }
 
 .coding-logo:hover {
@@ -442,6 +443,8 @@ body {
     border-radius: 8px;
     margin-bottom: 2rem;
     border: 1px solid var(--primary-color);
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .info-item {
@@ -466,6 +469,10 @@ body {
 
 .social-links {
     margin-bottom: 1rem;
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
 }
 
 .social-links a {
@@ -972,3 +979,25 @@ body {
         height: 60px;
     }
 }
+
+
+    /* Events Section */
+    .events-section {
+        padding: 40px;
+        background-color: #1A1A1A;
+        color: #EEE;
+        text-align: center;
+    }
+    
+    .event {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #00FFD1;
+        border-radius: 5px;
+        background-color: #2A2A2A;
+        box-shadow: 0 0 10px rgba(0, 255, 209, 0.5);
+    }
+    
+    .event h3 {
+        color: #00FFD1;
+    }

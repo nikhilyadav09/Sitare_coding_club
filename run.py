@@ -10,5 +10,13 @@ def index():
 def wall_of_fame():
     return render_template('wall_of_fame.html')
 
+@app.route('/join')
+def join():
+    return render_template('join.html')
+
+@app.route('/event')
+def event():
+    return render_template('event.html')
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
