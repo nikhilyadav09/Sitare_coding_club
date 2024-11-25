@@ -17,14 +17,14 @@
 
     <header class="header">
         <div class="logo-container">
-            <img src="{{ url_for('static', filename='images/code-logo.png') }}" alt="Coding Club Logo" class="coding-logo">
+            <img src="{{ url_for('static', filename='images/sitare-logo.jpeg') }}" alt="Coding Club Logo" class="sitare-logo">
         </div>
         <div class="title-container">
             <h1 id="sitare-coding-club" class="club-name">&lt;Sitare Coding Club/&gt;</h1>
             <h2 id="sitare-university" class="university-name">Sitare University</h2>
         </div>
         <div class="logo-container">
-            <img src="{{ url_for('static', filename='images/sitare-logo.jpeg') }}" alt="Sitare Logo" class="sitare-logo">
+            <img src="{{ url_for('static', filename='images/code-logo.png') }}" alt="Sitare Logo" class="sitare-logo">
         </div>
     </header>
 
@@ -42,7 +42,7 @@
             </div>
             <div class="cta-buttons">
                 <a href="https://forms.gle/CJMCGS4eaqXDhXTZ9" target="_blank" class="cta-button">Join the Club</a>
-                <a href="#events" class="cta-button secondary">View Events</a>
+                <a href="{{ url_for('blog') }}" class="cta-button secondary">View blogs</a>
             </div>
         </section>
 <!-- About Section -->
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </section>
-
+    
         <section id="events" class="events-section">
             <h2>Upcoming Events</h2>
             <div class="event">
@@ -94,47 +94,56 @@
                 <p>Location: Online</p>
             </div>
         </section>
-        <section class="section coordinators">
-            <h2>Our leads</h2>
-            <div class="leadership-team">
-                <div class="coordinator-card faculty">
-                    <img src="{{ url_for('static', filename='images/kusha_sir.jpg') }}" alt="Faculty Advisor">
-                    <h3>Dr. Kushal Shah</h3>
-                    <p class="role">Faculty Advisor</p>
-                    <p class="expertise">PhD in Plasma Physics</p>
+        <h2 style="text-align: center; margin top: 40px padding-top: 40px;;; font-size: 40px; color: #76c7c0; ">Our Leads</h2>
+        <section class="team-members" id="team">
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member-card">
+                    <img src="{{ url_for('static', filename='images/saurabhpandey.jpeg') }}" alt="Team Member">
+                    <h4>Saurabh Pandey</h4>
+                    <p>Main Instructor</p>
                     <div class="social-links">
-                        <a href="https://github.com/us" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kushal-shah-95b9a3b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Aksherwal" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/animesh-awasthi-000me" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
-                
-                <div class="main-coordinators">
-                    <div class="coordinator-card">
-                        <img src="{{ url_for('static', filename='images/narayan.jpeg') }}" alt="Main Coordinator">
-                        <h3>Narayan Jat</h3>
-                        <p class="role">Club Coordinator</p>
-                        <p class="expertise">Junior At Sitare University</p>
-                        <div class="social-links">
-                            <a href="https://github.com/narayan-jat" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/narayan-jat-23935a255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDxVjcArSR3%2BR7Oo03wErow%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
+        
+                <div class="team-member-card">
+                    <img src="{{ url_for('static', filename='images/Narayan.jpeg') }}" alt="Team Member">
+                    <h4>Narayan Jat</h4>
+                    <p>Club Co-Ordinator</p>
+                    <div class="social-links">
+                        <a href="https://github.com/narayan-jat" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/narayan-jat-23935a255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDxVjcArSR3%2BR7Oo03wErow%3D%3D" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
+                </div>
+                <div class="team-member-card">
+                    <img src="{{ url_for('static', filename='images/Bharat.jpg') }}" alt="Team Member">
+                    <h4>Bharat Suthar</h4>
+                    <p>Club Sub-Co-Ordinator</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Aksherwal" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bharat-suthar-su" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        
 
-                    <div class="coordinator-card">
-                        <img src="{{ url_for('static', filename='images/bharat.jpg') }}" alt="Sub Coordinator">
-                        <h3>Bharat Suthar</h3>
-                        <p class="role">Sub Coordinator</p>
-                        <p class="expertise">Junior At Sitare University</p>
-                        <div class="social-links">
-                            <a href="" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/bharat-suthar-su" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             
-        </section>
+        
 <!-- Team Members Section -->
 <h2 style="text-align: center; margin:0px 0px 48px; font-size: 40px; color: #76c7c0; ">Our Team</h2>
 <section class="team-members" id="team">
@@ -157,7 +166,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
             <h4>Nikhil Yadav</h4>
-            <p>Sophomire </p>
+            <p>Sophomore </p>
             <div class="social-links">
                 <a href="https://github.com/username" target="_blank">
                     <i class="fab fa-github"></i>
@@ -170,7 +179,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/Akash.jpg') }}" alt="Team Member">
             <h4>Akash Kumar</h4>
-            <p>Sophomire</p>
+            <p>Sophomore</p>
             <div class="social-links">
                 <a href="https://github.com/Aksherwal" target="_blank">
                     <i class="fab fa-github"></i>
@@ -183,7 +192,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/anshul.jpg') }}" alt="Team Member">
             <h4>Anshul Kumar</h4>
-            <p>Sophomire</p>
+            <p>Sophomore</p>
             <div class="social-links">
                 <a href="https://github.com/username" target="_blank">
                     <i class="fab fa-github"></i>
@@ -197,7 +206,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/deepali.jpg') }}" alt="Team Member">
             <h4>Deepali Tomar</h4>
-            <p>Sophomire</p>
+            <p>Sophomore</p>
             <div class="social-links">
                 <a href="https://github.com/deepalitomar021" target="_blank">
                     <i class="fab fa-github"></i>
@@ -210,7 +219,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/Jitendra.jpg') }}" alt="Team Member">
             <h4>Jitendra Yadav</h4>
-            <p>Sophomire</p>
+            <p>Sophomore</p>
             <div class="social-links">
                 <a href="http://GitHub.com/Jittu77" target="_blank">
                     <i class="fab fa-github"></i>
@@ -223,7 +232,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/saurabh.jpg') }}" alt="Team Member">
             <h4>Suarabh Agrahari</h4>
-            <p>Sophomire</p>
+            <p>Sophomore</p>
             <div class="social-links">
                 <a href="hhttps://github.com/mrstarks298" target="_blank">
                     <i class="fab fa-github"></i>
@@ -236,7 +245,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/Yashwardhan.jpg') }}" alt="Team Member">
             <h4>Yashwardhan Singh Chundawat</h4>
-            <p>Sophomire</p>
+            <p>Sophomore</p>
             <div class="social-links">
                 <a href="https://github.com/username" target="_blank">
                     <i class="fab fa-github"></i>
@@ -292,7 +301,7 @@
                 <a href="#"><i class="fab fa-discord"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <p>&copy; 2024 Sitare Coding Club. <span class="love-message">Made with <i class="fas fa-heart"></i> by developers, for developers</span></p>
+            <p>&copy; 2024 Sitare Coding Club. <span class="love-message">Made with <i class="fas fa-heart"></i> by <a href="{{ url_for('developers') }}">developers</a>, for developers</span></p>
         </div>
     </footer>
 

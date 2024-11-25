@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitar University Coding Club Blog</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .blog-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="blog-header text-white py-24 text-center">
+        <h1 class="text-4xl font-bold mb-4">Coding Club Blog</h1>
+        <p class="text-xl">Stay updated with our latest projects, events, and tutorials</p>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="container mx-auto px-6 py-8">
+        <!-- Featured Post -->
+        <article class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <img src="/api/placeholder/800/400" alt="Featured post image" class="w-full h-64 object-cover">
+            <div class="p-6">
+                <span class="text-blue-600 text-sm font-semibold">Featured Post</span>
+                <h2 class="text-2xl font-bold mt-2 mb-4">
+                    <a href="#" class="hover:text-blue-600">Building Our First Machine Learning Model</a>
+                </h2>
+                <p class="text-gray-600 mb-4">Learn how our team built a machine learning model to predict student performance using Python and scikit-learn. We'll walk through the entire process from data collection to model deployment.</p>
+                <div class="flex items-center">
+                    <img src="/api/placeholder/40/40" alt="Author" class="w-10 h-10 rounded-full">
+                    <div class="ml-4">
+                        <p class="text-sm font-semibold">John Doe</p>
+                        <p class="text-sm text-gray-500">Posted on November 25, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recent Posts Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Post 1 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/200" alt="Post image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">
+                        <a href="#" class="hover:text-blue-600">Web Development Workshop Highlights</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">Recap of our successful web development workshop where students learned HTML, CSS, and JavaScript fundamentals.</p>
+                    <span class="text-sm text-gray-500">November 20, 2024</span>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/200" alt="Post image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">
+                        <a href="#" class="hover:text-blue-600">Coding Competition Winners</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">Congratulations to the winners of our annual coding competition! Check out their winning projects and solutions.</p>
+                    <span class="text-sm text-gray-500">November 15, 2024</span>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/200" alt="Post image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">
+                        <a href="#" class="hover:text-blue-600">Getting Started with Git</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">A beginner's guide to version control with Git. Learn the basics of repositories, commits, and collaboration.</p>
+                    <span class="text-sm text-gray-500">November 10, 2024</span>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
