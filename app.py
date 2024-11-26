@@ -18,5 +18,13 @@ def join():
 def event():
     return render_template('event.html')
 
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
+@app.route('/developers')
+def developers():
+    return render_template('developers.html')
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
