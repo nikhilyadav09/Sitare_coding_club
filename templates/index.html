@@ -17,14 +17,16 @@
 
     <header class="header">
         <div class="logo-container">
-            <img src="{{ url_for('static', filename='images/code-logo.png') }}" alt="Coding Club Logo" class="coding-logo">
-        </div>
+            <a href="https://sitare.org/univ/" target="_blank">
+                <img src="{{ url_for('static', filename='images/sitare-logo.jpeg') }}" alt="Coding Club Logo" class="sitare-logo">
+            </a>
+                    </div>
         <div class="title-container">
             <h1 id="sitare-coding-club" class="club-name">&lt;Sitare Coding Club/&gt;</h1>
             <h2 id="sitare-university" class="university-name">Sitare University</h2>
         </div>
         <div class="logo-container">
-            <img src="{{ url_for('static', filename='images/sitare-logo.jpeg') }}" alt="Sitare Logo" class="sitare-logo">
+            <img src="{{ url_for('static', filename='images/code-logo.png') }}" alt="Coding Club Logo" class="coding-logo">
         </div>
     </header>
 
@@ -42,7 +44,7 @@
             </div>
             <div class="cta-buttons">
                 <a href="https://forms.gle/CJMCGS4eaqXDhXTZ9" target="_blank" class="cta-button">Join the Club</a>
-                <a href="#events" class="cta-button secondary">View Events</a>
+                <a href="#events" class="cta-button secondary">Past events</a>
             </div>
         </section>
 <!-- About Section -->
@@ -50,119 +52,120 @@
     <h2 class="section-title">Who We Are</h2>
     <div class="about-content">
         <p>
-            Welcome to Sitare Coding Club, where innovation meets implementation! We are a vibrant community of passionate coders, developers, and tech enthusiasts at Sitare University. Our mission is to foster a culture of collaborative learning, innovation, and technical excellence.
-        </p>
+            Welcome to the Sitare Coding Club, your ultimate hub for all things coding and innovation at Sitare University! We are a dynamic community of coders, developers, and tech enthusiasts who come together weekly to solve coding challenges, work on exciting projects, and share knowledge through quizzes, competitions, and webinars. Our mission is to inspire learning, encourage collaboration, and provide opportunities to enhance technical skills. With plans to organize hackathons and foster a culture of creativity and excellence, we’re here to turn your passion for coding into impactful implementations. Join us and be part of the journey!        </p>
     </div>
-</section>
-        <section id="about" class="section who-we-are">
-
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Code Together</h3>
-                        <p>Join our collaborative coding sessions and hackathons where we solve real-world problems and build innovative solutions.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>Learn & Grow</h3>
-                        <p>Attend weekly workshops on cutting-edge technologies, from web development to artificial intelligence.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-project-diagram"></i>
-                        <h3>Build Projects</h3>
-                        <p>Work on real-world projects with industry mentors and build a strong portfolio for your future.</p>
-                    </div>
-                </div>
+    <section id="about" class="section who-we-are">
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Crack the Code</h3>
+                <p>Engage in coding challenges, quizzes, and competitions to sharpen your problem-solving skills and master new techniques.</p>
             </div>
-        </section>
-
-        <section id="events" class="events-section">
-            <h2>Upcoming Events</h2>
-            <div class="event">
-                <h3>Hackathon 2024</h3>
-                <p>Date: December 15, 2024</p>
-                <p>Location: Auditorium, Block A</p>
+            <div class="feature-card">
+                <i class="fas fa-calendar-week"></i>
+                <h3>Weekly Meetups</h3>
+                <p>Join our weekly sessions where we collaborate on coding, share ideas, and work together to achieve excellence.</p>
             </div>
-            <div class="event">
-                <h3>Workshop on AI/ML</h3>
-                <p>Date: January 10, 2025</p>
-                <p>Location: Lab 2, Block B</p>
-            </div>
-            <div class="event">
-                <h3>Code Challenge</h3>
-                <p>Date: February 5, 2025</p>
-                <p>Location: Online</p>
-            </div>
-        </section>
-        <section class="section coordinators">
-            <h2>Our leads</h2>
-            <div class="leadership-team">
-                <div class="coordinator-card faculty">
-                    <img src="{{ url_for('static', filename='images/kusha_sir.jpg') }}" alt="Faculty Advisor">
-                    <h3>Dr. Kushal Shah</h3>
-                    <p class="role">Faculty Advisor</p>
-                    <p class="expertise">PhD in Plasma Physics</p>
-                    <div class="social-links">
-                        <a href="https://github.com/us" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kushal-shah-95b9a3b" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                
-                <div class="main-coordinators">
-                    <div class="coordinator-card">
-                        <img src="{{ url_for('static', filename='images/narayan.jpeg') }}" alt="Main Coordinator">
-                        <h3>Narayan Jat</h3>
-                        <p class="role">Club Coordinator</p>
-                        <p class="expertise">Junior At Sitare University</p>
-                        <div class="social-links">
-                            <a href="https://github.com/narayan-jat" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/narayan-jat-23935a255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDxVjcArSR3%2BR7Oo03wErow%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="coordinator-card">
-                        <img src="{{ url_for('static', filename='images/bharat.jpg') }}" alt="Sub Coordinator">
-                        <h3>Bharat Suthar</h3>
-                        <p class="role">Sub Coordinator</p>
-                        <p class="expertise">Junior At Sitare University</p>
-                        <div class="social-links">
-                            <a href="" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/bharat-suthar-su" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-        </section>
-<!-- Team Members Section -->
-<h2 style="text-align: center; margin:0px 0px 48px; font-size: 40px; color: #76c7c0; ">Our Team</h2>
-<section class="team-members" id="team">
-    <div class="team-grid">
-        <!-- Team Member 1 -->
-        <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/animesh.jpg') }}" alt="Team Member">
-            <h4>Animesh Awashthi</h4>
-            <p>Junior</p>
-            <div class="social-links">
-                <a href="https://github.com/Aksherwal" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/animesh-awasthi-000me" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovate & Create</h3>
+                <p>Participate in webinars, work on impactful projects, and gear up for exciting hackathons that turn ideas into reality.</p>
             </div>
         </div>
+    </section>
+    
+    
+    <section id="events" class="events-section">
+        <h2 class="section-title">Past Events</h2>
+        <div class="event">
+            <h3>PyQuest</h3>
+            <p>Date: October 20, 2024</p>
+            <p>Time: 3:30 PM to 5:00 PM</p>
+            <p>Location: Classroom B101</p>
+        </div>
+        <div class="event">
+            <h3>Seminar: How to Start Coding</h3>
+            <p>Date: October 30, 2024</p>
+            <p>Time: 5:00 PM to 6:00 PM</p>
+            <p>Location: Online</p>
+        </div>
+        <div class="event">
+            <h3>Classroom Competitions: Logic Behind Code</h3>
+            <p>Date: November 3, 2024</p>
+            <p>Location: Classroom B101</p>
+        </div>
+    </section>
+    
+        <section class="team-members" id="team">
+            <h2 class="section-title">Our Leads</h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member-card">
+                    <img src="{{ url_for('static', filename='images/saurabhpandey.jpeg') }}" alt="Team Member">
+                    <h4>Saurabh Pandey</h4>
+                    <p>Club Advisor</p>
+                    <p>CS Faculty, Ex-Oracle</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saurabh-pandey-58840816/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="team-member-card">
+                    <img src="{{ url_for('static', filename='images/Narayan.jpeg') }}" alt="Team Member">
+                    <h4>Narayan Jat</h4>
+                    <p>Club Co-Ordinator</p>
+                    <p>Junior at Sitare University</p>
+                    <div class="social-links">
+                        <a href="https://github.com/narayan-jat" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/narayan-jat-23935a255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDxVjcArSR3%2BR7Oo03wErow%3D%3D" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <img src="{{ url_for('static', filename='images/Bharat.jpg') }}" alt="Team Member">
+                    <h4>Bharat Suthar</h4>
+                    <p>Club Sub-Co-Ordinator</p>
+                    <p>Junior at Sitare University</p>
+                    <div class="social-links">
+                        <a href="https://github.com/bharat-suthar-su" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bharat-suthar-su" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+            
+                </div>
+            </section>
+        
+
+
+            
+        
+<!-- Team Members Section -->
+<section class="team-members" id="team">
+    <h2 class="section-title">Club Management Team</h2>
+
+    <div class="team-grid">
+        <!-- Team Member 1 -->
 
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
             <h4>Nikhil Yadav</h4>
-            <p>Sophomire </p>
+            <p>Sophomore at Sitare University</p>
             <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
+                <a href="https://github.com/nikhilyadav09" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
+                <a href="https://linkedin.com/in/nikhilyadav09" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
@@ -170,20 +173,20 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/Akash.jpg') }}" alt="Team Member">
             <h4>Akash Kumar</h4>
-            <p>Sophomire</p>
+            <p>Sophomore at Sitare University</p>
             <div class="social-links">
                 <a href="https://github.com/Aksherwal" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/aakash-kumar-aa0b591b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <a href="https://www.linkedin.com/in/aakash-kumar-aa0b591b8" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/anshul.jpg') }}" alt="Team Member">
-            <h4>Anshul Kumar</h4>
-            <p>Sophomire</p>
+            <h4>Anshul Sharma</h4>
+            <p>Sophomore at Sitare University</p>
             <div class="social-links">
                 <a href="https://github.com/username" target="_blank">
                     <i class="fab fa-github"></i>
@@ -197,20 +200,20 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/deepali.jpg') }}" alt="Team Member">
             <h4>Deepali Tomar</h4>
-            <p>Sophomire</p>
+            <p>Sophomore at Sitare University</p>
             <div class="social-links">
                 <a href="https://github.com/deepalitomar021" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/deepali-tomar-4b876b289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <a href="https://www.linkedin.com/in/deepali-tomar-4b876b289" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/Jitendra.jpg') }}" alt="Team Member">
-            <h4>Jitendra Yadav</h4>
-            <p>Sophomire</p>
+            <h4>Jitendra Kumar</h4>
+            <p>Sophomore at Sitare University</p>
             <div class="social-links">
                 <a href="http://GitHub.com/Jittu77" target="_blank">
                     <i class="fab fa-github"></i>
@@ -223,7 +226,7 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/saurabh.jpg') }}" alt="Team Member">
             <h4>Suarabh Agrahari</h4>
-            <p>Sophomire</p>
+            <p>Sophomore at Sitare University</p>
             <div class="social-links">
                 <a href="hhttps://github.com/mrstarks298" target="_blank">
                     <i class="fab fa-github"></i>
@@ -236,25 +239,12 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/Yashwardhan.jpg') }}" alt="Team Member">
             <h4>Yashwardhan Singh Chundawat</h4>
-            <p>Sophomire</p>
+            <p>Sophomore at Sitare University</p>
             <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
+                <a href="https://github.com/yashwardhan-singh-chundawat-a87572247" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/yashwardhan-singh-chundawat-a87572247" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
-            <h4>Alex Chen</h4>
-            <p>Technical Lead</p>
-            <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
@@ -264,16 +254,16 @@
 
     
 <section id="contact" class="section contact">
-    <h2>Get in Touch</h2>
+    <h2 class="section-title">Get in Touch</h2>
         <div class="contact-container">
             <div class="contact-info">
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>
-                    <span>coding.club@sitare.edu</span>
+                    <span>codingclub@sitare.org</span>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-phone"></i>
-                        <span>+91 1234567890</span>
+                        <span>+91 9301800429</span>
                 </div>
                 <div class="info-item">
                         <i class="fab fa-discord"></i>
@@ -288,11 +278,11 @@
         <div class="footer-content">
             <div class="social-links">
                 <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/school/sitare-university/ "target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-discord"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2024 Sitare Coding Club. <span class="love-message">Made with <i class="fas fa-heart"></i> by developers, for developers</span></p>
+            </div><br>
+            <p>&copy;2024 Sitare Coding Club. <br><span class="love-message">Made with <i class="fas fa-heart"></i> by <a href="{{ url_for('developers') }}">developers</a>, for developers</span></p>
         </div>
     </footer>
 

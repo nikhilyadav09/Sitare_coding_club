@@ -61,31 +61,35 @@ body {
 }
 
 .logo-container {
-    flex: 0 0 100px;
+    flex: 0 0 150px; /* Adjusted for larger container size */
 }
 
 .coding-logo {
-    width: 110px;
-    height: auto;
+    width: 150px; /* Set a larger size for the logo */
+    height: 150px; /* Make height equal to width for a perfect circle */
     transition: transform 0.3s;
-    border-radius: 50%;
+    border-radius: 50%; /* Ensures the logo is circular */
+    object-fit: cover; /* Ensures the logo fits well without distortion */
 }
+
 
 .coding-logo:hover {
     transform: scale(1.1);
 }
 
-.sitare-logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--primary-color);
-    transition: transform 0.3s;
-}
+
 
 .sitare-logo:hover {
     transform: scale(1.1);
+}
+
+
+.sitare-logo {
+    width: 140px; /* Set a larger size for the logo */
+    height: 140px; /* Make height equal to width for a perfect circle */
+    transition: transform 0.3s;
+    border-radius: 50%; /* Ensures the logo is circular */
+    object-fit: cover; /* Ensures the logo fits well without distortion */
 }
 
 .title-container {
@@ -270,7 +274,7 @@ body {
 
 .achievement-image {
     position: relative;
-    height: 200px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -981,23 +985,313 @@ body {
 }
 
 
-    /* Events Section */
-    .events-section {
-        padding: 40px;
-        background-color: #1A1A1A;
-        color: #EEE;
-        text-align: center;
-    }
-    
-    .event {
-        margin-bottom: 20px;
-        padding: 15px;
-        border: 1px solid #00FFD1;
-        border-radius: 5px;
-        background-color: #2A2A2A;
-        box-shadow: 0 0 10px rgba(0, 255, 209, 0.5);
-    }
+/* Events Section */
+.events-section {
+    padding: 40px;
+    background-color: #1A1A1A;
+    color: #EEE;
+    text-align: center;
+}
+
+.event {
+    margin: 20px auto; /* Center the boxes horizontally */
+    padding: 15px;
+    width: 70%; /* Set a fixed width for the event boxes */
+    max-width: 600px; /* Prevent the boxes from becoming too wide on larger screens */
+    border: 1px solid #00FFD1;
+    border-radius: 5px;
+    background-color: #2A2A2A;
+    box-shadow: 0 0 10px rgba(0, 255, 209, 0.5);
+}
+
     
     .event h3 {
         color: #00FFD1;
     }
+
+
+
+
+    /* Winners Sections Styling */
+.winners-section {
+    padding: 4rem 2rem;
+    background: var(--dark-bg);
+}
+
+.winners-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.winners-section h2::after {
+    content: '</>';
+    font-size: 1rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.winners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.winners-year {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.winners-year h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.winners-year h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.achievement-card.hackathon {
+    width: 300px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card.hackathon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(118, 199, 192, 0.2);
+}
+
+.achievement-image {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.achievement-card.hackathon:hover .achievement-image img {
+    transform: scale(1.1);
+}
+
+.rank-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.achievement-content {
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--card-bg);
+}
+
+.achievement-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.achievement-content p {
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .winners-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-card.hackathon {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .winners-section h2 {
+        font-size: 2rem;
+    }
+
+    .winners-year h2 {
+        font-size: 1.5rem;
+    }
+
+    .achievement-card.hackathon {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    .achievement-image {
+        height: 300px;
+    }
+}
+
+
+
+.team-members {
+padding: 6rem 2rem;
+background: var(--gradient-overlay);
+}
+
+.section-title {
+text-align: center;
+color: var(--primary-color);
+font-size: 2.5rem;
+margin-bottom: 4rem;
+position: relative;
+}
+
+.section-title::after {
+content: '';
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+width: 60px;
+height: 3px;
+background: var(--primary-color);
+}
+
+.team-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2.5rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.team-member-card {
+background: var(--card-bg);
+border-radius: 15px;
+padding: 2rem;
+text-align: center;
+transition: all 0.3s ease;
+border: 1px solid rgba(118, 199, 192, 0.2);
+position: relative;
+overflow: hidden;
+}
+
+.team-member-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(135deg, rgba(118, 199, 192, 0.1), transparent);
+opacity: 0;
+transition: 0.3s;
+}
+
+.team-member-card:hover::before {
+opacity: 1;
+}
+
+.team-member-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+border-color: var(--primary-color);
+}
+
+.team-member-card img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+border: 4px solid var(--primary-color);
+margin-bottom: 1.5rem;
+transition: all 0.3s ease;
+}
+
+.team-member-card:hover img {
+transform: scale(1.1);
+border-width: 5px;
+}
+
+.team-member-card h4 {
+color: var(--primary-color);
+font-size: 1.3rem;
+margin-bottom: 0.5rem;
+}
+
+.team-member-card p {
+color: var(--text-color);
+font-size: 1rem;
+margin-bottom: 1.5rem;
+opacity: 0.9;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
+.social-links a {
+color: var(--primary-color);
+font-size: 1.2rem;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: rgba(118, 199, 192, 0.1);
+transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+background: var(--primary-color);
+color: var(--dark-bg);
+transform: translateY(-3px);
+}
+
+
+.blog-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/api/placeholder/1200/400');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.team-member-card {
+    position: relative; /* Ensure the card is above overlays */
+    z-index: 2;
+}
+
+
+.social-links a {
+    pointer-events: auto; /* Ensure links are clickable */
+    position: relative;
+    z-index: 2; /* Prioritize the clickable layer */
+}

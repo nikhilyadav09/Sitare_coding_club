@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitare Coding Club</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="bgVideo">
+            <source src="{{ url_for('static', filename='images/background-video.mp4') }}" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="https://sitare.org/univ/" target="_blank">
+                <img src="{{ url_for('static', filename='images/sitare-logo.jpeg') }}" alt="Coding Club Logo" class="sitare-logo">
+            </a>
+                    </div>
+        <div class="title-container">
+            <h1 id="sitare-coding-club" class="club-name">&lt;Sitare Coding Club/&gt;</h1>
+            <h2 id="sitare-university" class="university-name">Sitare University</h2>
+        </div>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/code-logo.png') }}" alt="Coding Club Logo" class="coding-logo">
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <a href="{{ url_for('index') }}" class="active">Home</a>
+        <a href="{{ url_for('wall_of_fame') }}">Wall of Fame</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+<body>
+    
+    <!-- Team Members Section -->
+     <br>
+<h2 style="text-align: center; margin:0px 0px 48px; font-size: 40px; color: #76c7c0; ">Developers Of Coding Club</h2>
+<section class="team-members" id="team">
+    <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/Narayan.jpeg') }}" alt="Team Member">
+            <h4>Narayan Jat</h4>
+            <p>Junior at SU</p>
+            <div class="social-links">
+                <a href="https://github.com/narayan-jat" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/narayan-jat-23935a255/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
+            <h4>Nikhil Yadav</h4>
+            <p>Sophomore at SU</p>
+            <div class="social-links">
+                <a href="https://github.com/nikhilyadav09" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/nikhilyadav09" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/neeraj.png') }}" alt="Team Member">
+            <h4>Neeraj Parmar</h4>
+            <p>Freshman at SU</p>
+            <div class="social-links">
+                <a href="https://github.com/Aksherwal" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/neerajparmar24" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/rohit.png') }}" alt="Team Member">
+            <h4>Rohit Malviya</h4>
+            <p>Freshman at SU</p>
+            <div class="social-links">
+                <a href="https://github.com/Rohitmalviya05" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rohit-malviya-633929324/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    
+        <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/manoj.png') }}" alt="Team Member">
+            <h4>Manoj Devda</h4>
+            <p>Freshman at SU</p>
+            <div class="social-links">
+                <a href="https://github.com/Manoj-Dewda" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manojdewda" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="team-member-card">
+            <img src="{{ url_for('static', filename='images/sandhya.png') }}" alt="Team Member">
+            <h4>Sandhya Parmar</h4>
+            <p>Freshman at SU</p>
+            <div class="social-links">
+                <a href="https://github.com/Sandhya-Parmar09" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sandhya-parmar-82a838329/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/school/sitare-university/ "target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div><br>
+        <p>&copy;2024 Sitare Coding Club. <br><span class="love-message">Made with <i class="fas fa-heart"></i> by developers, for developers</span></p>
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</body>
+</html>
