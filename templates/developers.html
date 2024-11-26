@@ -3,142 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .team-members {
-    padding: 6rem 2rem;
-    background: var(--gradient-overlay);
-}
-
-.section-title {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: var(--primary-color);
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.team-member-card {
-    background: var(--card-bg);
-    border-radius: 15px;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(118, 199, 192, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-.team-member-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(118, 199, 192, 0.1), transparent);
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.team-member-card:hover::before {
-    opacity: 1;
-}
-
-.team-member-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    border-color: var(--primary-color);
-}
-
-.team-member-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid var(--primary-color);
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.team-member-card:hover img {
-    transform: scale(1.1);
-    border-width: 5px;
-}
-
-.team-member-card h4 {
-    color: var(--primary-color);
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.team-member-card p {
-    color: var(--text-color);
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.social-links a {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(118, 199, 192, 0.1);
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background: var(--primary-color);
-    color: var(--dark-bg);
-    transform: translateY(-3px);
-}
-    </style>
+    <title>Sitare Coding Club</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="video-container">
+        <video autoplay muted loop id="bgVideo">
+            <source src="{{ url_for('static', filename='images/background-video.mp4') }}" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="https://sitare.org/univ/" target="_blank">
+                <img src="{{ url_for('static', filename='images/sitare-logo.jpeg') }}" alt="Coding Club Logo" class="sitare-logo">
+            </a>
+                    </div>
+        <div class="title-container">
+            <h1 id="sitare-coding-club" class="club-name">&lt;Sitare Coding Club/&gt;</h1>
+            <h2 id="sitare-university" class="university-name">Sitare University</h2>
+        </div>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/code-logo.png') }}" alt="Coding Club Logo" class="coding-logo">
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <a href="{{ url_for('index') }}" class="active">Home</a>
+        <a href="{{ url_for('wall_of_fame') }}">Wall of Fame</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+<body>
+    
     <!-- Team Members Section -->
+     <br>
 <h2 style="text-align: center; margin:0px 0px 48px; font-size: 40px; color: #76c7c0; ">Developers Of Coding Club</h2>
 <section class="team-members" id="team">
     <div class="team-grid">
         <!-- Team Member 1 -->
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/animesh.jpg') }}" alt="Team Member">
+            <img src="{{ url_for('static', filename='images/Narayan.jpeg') }}" alt="Team Member">
             <h4>Narayan Jat</h4>
-            <p>Junior</p>
+            <p>Junior at SU</p>
             <div class="social-links">
-                <a href="https://github.com/Aksherwal" target="_blank">
+                <a href="https://github.com/narayan-jat" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/animesh-awasthi-000me" target="_blank">
+                <a href="https://www.linkedin.com/in/narayan-jat-23935a255/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
@@ -147,70 +62,84 @@
         <div class="team-member-card">
             <img src="{{ url_for('static', filename='images/winner1.jpg') }}" alt="Team Member">
             <h4>Nikhil Yadav</h4>
-            <p>Sophomore </p>
+            <p>Sophomore at SU</p>
             <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
+                <a href="https://github.com/nikhilyadav09" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/username" target="_blank">
+                <a href="https://linkedin.com/in/nikhilyadav09" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/Akash.jpg') }}" alt="Team Member">
+            <img src="{{ url_for('static', filename='images/neeraj.png') }}" alt="Team Member">
             <h4>Neeraj Parmar</h4>
-            <p>Freshman</p>
+            <p>Freshman at SU</p>
             <div class="social-links">
                 <a href="https://github.com/Aksherwal" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/aakash-kumar-aa0b591b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <a href="https://www.linkedin.com/in/neerajparmar24" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/anshul.jpg') }}" alt="Team Member">
+            <img src="{{ url_for('static', filename='images/rohit.png') }}" alt="Team Member">
             <h4>Rohit Malviya</h4>
-            <p>Freshman</p>
+            <p>Freshman at SU</p>
             <div class="social-links">
-                <a href="https://github.com/username" target="_blank">
+                <a href="https://github.com/Rohitmalviya05" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/anshul-sharma-03a97a285" target="_blank">
+                <a href="https://www.linkedin.com/in/rohit-malviya-633929324/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
     
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/deepali.jpg') }}" alt="Team Member">
+            <img src="{{ url_for('static', filename='images/manoj.png') }}" alt="Team Member">
             <h4>Manoj Devda</h4>
-            <p>Freshman</p>
+            <p>Freshman at SU</p>
             <div class="social-links">
-                <a href="https://github.com/deepalitomar021" target="_blank">
+                <a href="https://github.com/Manoj-Dewda" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/deepali-tomar-4b876b289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <a href="https://www.linkedin.com/in/manojdewda" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="team-member-card">
-            <img src="{{ url_for('static', filename='images/Jitendra.jpg') }}" alt="Team Member">
+            <img src="{{ url_for('static', filename='images/sandhya.png') }}" alt="Team Member">
             <h4>Sandhya Parmar</h4>
-            <p>Freshman</p>
+            <p>Freshman at SU</p>
             <div class="social-links">
-                <a href="http://GitHub.com/Jittu77" target="_blank">
+                <a href="https://github.com/Sandhya-Parmar09" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jitendra-kumar-155238281" target="_blank">
+                <a href="https://www.linkedin.com/in/sandhya-parmar-82a838329/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
     </div>
 </section>
+<footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/school/sitare-university/ "target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div><br>
+        <p>&copy;2024 Sitare Coding Club. <br><span class="love-message">Made with <i class="fas fa-heart"></i> by developers, for developers</span></p>
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
 </body>
 </html>
